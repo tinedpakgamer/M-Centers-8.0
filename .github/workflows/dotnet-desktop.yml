@@ -1,4 +1,4 @@
-name: .NET Core Desktop
+name: .NET Corek Desktop
 
 on:
   push:
@@ -23,14 +23,13 @@ jobs:
       run: nuget restore "M Centers 8.0.sln"
 
     - name: Build WPF Application (x64)
-      run: msbuild MCenters/MCenters.csproj /p:Configuration=Release /p:Platform=x64
+      run: msbuild MCenters/MCenters.csproj /p:Configuration=Release /p:Platform=x64 && echo path
       
     - name: Publish Artifact (x64)
       uses: actions/upload-artifact@v4
       with:
         name: M-Centers-8.0
-        path: D:\a\M-Centers-8.0\M-Centers-8.0\MCentersLibrary\x64\Release\
-
+        path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\Releases\x64\
   build-x86:
     runs-on: windows-latest
 
@@ -47,10 +46,10 @@ jobs:
       run: nuget restore "M Centers 8.0.sln"
 
     - name: Build WPF Application (x86)
-      run: msbuild MCenters/MCenters.csproj /p:Configuration=Release /p:Platform=x86 /t:Rebuild
+      run: msbuild MCenters/MCenters.csproj /p:Configuration=Release /p:Platform=x86 /t:Rebuild && echo path
 
     - name: Publish Artifact (x86)
       uses: actions/upload-artifact@v4
       with:
         name: M-Centers-8.0
-        path: D:\a\M-Centers-8.0\M-Centers-8.0\MCentersLibrary\x86\Release\
+        path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\Releases\x86\
