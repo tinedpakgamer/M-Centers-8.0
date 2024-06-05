@@ -48,7 +48,7 @@
             </Grid.RowDefinitions>
 
 
-            <local:HoverableButton OpacityMask="Magenta" x:Name="dll_online_button" fw:RevealElement.BorderRadius="10"  Content="Dll Method Online"  Style="{DynamicResource ButtonRoundAccentRevealStyle}" VerticalContentAlignment="Bottom" Click="DllOnlineButton_Clicked" >
+            <local:HoverableButton OpacityMask="Magenta" x:Name="dll_online_button" fw:RevealElement.BorderRadius="10"  Content="DLL Method (Online)"  Style="{DynamicResource ButtonRoundAccentRevealStyle}" VerticalContentAlignment="Bottom" Click="DllOnlineButton_Clicked" >
                 <fw:RevealElement.MouseOverBackground>
                     <SolidColorBrush Color="#FF4CC2FF" Opacity="0.5"/>
                 </fw:RevealElement.MouseOverBackground>
@@ -59,7 +59,7 @@
             <Image x:Name="dll_online_image" IsHitTestVisible="False" Source="images\dll_online_icon.png" Margin="30"  />
 
 
-            <local:HoverableButton OpacityMask="Magenta" Grid.Column="1" x:Name="dll_auto_patch_button" fw:RevealElement.BorderRadius="10"  Content="Dll Method Auto Patch"  Style="{DynamicResource ButtonRoundAccentRevealStyle}" VerticalContentAlignment="Bottom" Click="DllAutoPatchButton_Clicked" >
+            <local:HoverableButton OpacityMask="Magenta" Grid.Column="1" x:Name="dll_auto_patch_button" fw:RevealElement.BorderRadius="10"  Content="DLL Method (Auto-Patch)"  Style="{DynamicResource ButtonRoundAccentRevealStyle}" VerticalContentAlignment="Bottom" Click="DllAutoPatchButton_Clicked" >
                 <fw:RevealElement.MouseOverBackground>
                     <SolidColorBrush Color="#FF4CC2FF" Opacity="0.5"/>
                 </fw:RevealElement.MouseOverBackground>
@@ -70,7 +70,7 @@
             <Image x:Name="dll_auto_patch_image" IsHitTestVisible="False" Source="images\dll_auto_patch_icon.png" Margin="30" Grid.Column="1"  />
 
 
-            <local:HoverableButton OpacityMask="Magenta" Grid.Row="1" x:Name="dll_non_permanent_button" fw:RevealElement.BorderRadius="10"  Content="Dll Non Permanent"  Style="{DynamicResource ButtonRoundAccentRevealStyle}" VerticalContentAlignment="Bottom" Click="DllNonPermanentButton_Clicked" >
+            <local:HoverableButton OpacityMask="Magenta" Grid.Row="1" x:Name="dll_non_permanent_button" fw:RevealElement.BorderRadius="10"  Content="DLL (Non-Permanent)"  Style="{DynamicResource ButtonRoundAccentRevealStyle}" VerticalContentAlignment="Bottom" Click="DllNonPermanentButton_Clicked" >
                 <fw:RevealElement.MouseOverBackground>
                     <SolidColorBrush Color="#FF4CC2FF" Opacity="0.5"/>
                 </fw:RevealElement.MouseOverBackground>
@@ -81,7 +81,7 @@
             <Image x:Name="dll_non_permanent_image" IsHitTestVisible="False" Grid.Row="1" Source="images\dll_non_permanent_icon.png" Margin="30"  />
 
 
-            <local:HoverableButton OpacityMask="Magenta" Grid.Row="1" Grid.Column="1" x:Name="mcenter_5_button" fw:RevealElement.BorderRadius="10"  Content="MCenter 5.0"  Style="{DynamicResource ButtonRoundAccentRevealStyle}" VerticalContentAlignment="Bottom" Click="MCenters5Button_Clicked" >
+            <local:HoverableButton OpacityMask="Magenta" Grid.Row="1" Grid.Column="1" x:Name="mcenter_5_button" fw:RevealElement.BorderRadius="10"  Content="Memory Injection"  Style="{DynamicResource ButtonRoundAccentRevealStyle}" VerticalContentAlignment="Bottom" Click="MCenters5Button_Clicked" >
                 <fw:RevealElement.MouseOverBackground>
                     <SolidColorBrush Color="#FF4CC2FF" Opacity="0.5"/>
                 </fw:RevealElement.MouseOverBackground>
@@ -92,7 +92,7 @@
             <Image x:Name="mcenter_5_image" IsHitTestVisible="False" Source="images\mcenter_5_icon.png" Grid.Row="1" Grid.Column="1" Margin="30"  />
 
 
-            <local:HoverableButton OpacityMask="Magenta" Grid.Row="2" x:Name="hook_button" fw:RevealElement.BorderRadius="10"  Content="Hooking"  Style="{DynamicResource ButtonRoundAccentRevealStyle}" VerticalContentAlignment="Bottom" Click="HookButton_Clicked" >
+            <local:HoverableButton OpacityMask="Magenta" Grid.Row="2" x:Name="hook_button" fw:RevealElement.BorderRadius="10"  Content="Hooking Method"  Style="{DynamicResource ButtonRoundAccentRevealStyle}" VerticalContentAlignment="Bottom" Click="HookButton_Clicked" >
                 <fw:RevealElement.MouseOverBackground>
                     <SolidColorBrush Color="#FF4CC2FF" Opacity="0.5"/>
                 </fw:RevealElement.MouseOverBackground>
