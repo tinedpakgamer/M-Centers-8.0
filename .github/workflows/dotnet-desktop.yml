@@ -28,7 +28,7 @@ jobs:
     - name: Publish Artifact (x64)
       uses: actions/upload-artifact@v4
       with:
-        name: M-Centers-8.0
+        name: M-Centers-8.0 x64
         path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\Releases\x64\
   build-x86:
     runs-on: windows-latest
@@ -51,5 +51,5 @@ jobs:
     - name: Publish Artifact (x86)
       uses: actions/upload-artifact@v4
       with:
-        name: M-Centers-8.0
+        name: M-Centers-8.0 x86
         path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\Releases\x86\
