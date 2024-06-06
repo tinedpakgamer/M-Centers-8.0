@@ -1,56 +1,101 @@
-name: Build WPF Application
+name: M Centers 8.0
 
 on:
   push:
-    branches: [main]
+    branches: [ "master" ]
   pull_request:
-    branches: [main]
+    branches: [ "master" ]
 
 jobs:
-  build-x64:
+  build-x64-release:
     runs-on: windows-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
-    - name: Setup .NET Framework SDK
-      uses: actions/setup-dotnet@v1
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v2
+
+    - name: Restore Packages
+      run: nuget restore "M Centers 8.0.sln"
+
+    - name: Build M Centers (x64)
+      run: msbuild MCenters/MCenters.csproj /p:Configuration=Release /p:Platform=x64
+      
+    - name: Publish M Centers (x64)
+      uses: actions/upload-artifact@v4
       with:
-        dotnet-version: '4.7.2'
-
-    - name: Restore NuGet Packages
-      run: nuget restore MCenters.csproj
-
-    - name: Build WPF Application (x64)
-      run: msbuild MCenters.csproj /p:Configuration=Release /p:Platform=x64 /t:Rebuild
-
-    - name: Publish Artifact (x64)
-      uses: actions/upload-artifact@v2
-      with:
-        name: wpf-app-x64
-        path: Releases/x64/executable
-
-  build-x86:
+        name: M-Centers-8.0-Release x64
+        path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\bin\x64\Release\
+  build-x86-release:
     runs-on: windows-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
-    - name: Setup .NET Framework SDK
-      uses: actions/setup-dotnet@v1
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v2
+
+    - name: Restore Packages
+      run: nuget restore "M Centers 8.0.sln"
+
+    - name: Build M Centers (x86)
+      run: msbuild MCenters/MCenters.csproj /p:Configuration=Release /p:Platform=x86 /t:Rebuild
+
+    - name: Publish M Centers (x86)
+      uses: actions/upload-artifact@v4
       with:
-        dotnet-version: '4.7.2'
+        name: M-Centers-8.0-Release x86
+        path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\bin\x86\Release\
+  build-x64-debug:
+    runs-on: windows-latest
 
-    - name: Restore NuGet Packages
-      run: nuget restore MCenters.csproj
+    steps:
+    - uses: actions/checkout@v4
 
-    - name: Build WPF Application (x86)
-      run: msbuild MCenters.csproj /p:Configuration=Release /p:Platform=x86 /t:Rebuild
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
 
-    - name: Publish Artifact (x86)
-      uses: actions/upload-artifact@v2
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v2
+
+    - name: Restore Packages
+      run: nuget restore "M Centers 8.0.sln"
+
+    - name: Build M Centers Debug (x64)
+      run: msbuild MCenters/MCenters.csproj /p:Configuration=Debug /p:Platform=x64 /t:Rebuild
+
+    - name: Publish M Centers Debug (x64)
+      uses: actions/upload-artifact@v4
       with:
-        name: wpf-app-x86
-        path: Releases/x86/executable
+        name: M-Centers-8.0-Debug x64
+        path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\bin\x64\Debug\
+  build-x86-debug:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v2
+
+    - name: Restore Packages
+      run: nuget restore "M Centers 8.0.sln"
+
+    - name: Build M Centers Debug (x86)
+      run: msbuild MCenters/MCenters.csproj /p:Configuration=Debug /p:Platform=x86 /t:Rebuild
+
+    - name: Publish M Centers Debug (x86)
+      uses: actions/upload-artifact@v4
+      with:
+        name: M-Centers-8.0-Debug x86
+        path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\bin\x86\Debug\
