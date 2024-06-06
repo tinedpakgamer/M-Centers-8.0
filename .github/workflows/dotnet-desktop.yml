@@ -1,56 +1,55 @@
-name: Build WPF Application
+name: M Centers 8.0
 
 on:
   push:
-    branches: [main]
+    branches: [ "master" ]
   pull_request:
-    branches: [main]
+    branches: [ "master" ]
 
 jobs:
   build-x64:
     runs-on: windows-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
-    - name: Setup .NET Framework SDK
-      uses: actions/setup-dotnet@v1
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v2
+
+    - name: Restore Packages
+      run: nuget restore "M Centers 8.0.sln"
+
+    - name: Build M Centers (x64)
+      run: msbuild MCenters/MCenters.csproj /p:Configuration=Release /p:Platform=x64 && echo path
+      
+    - name: Publish M Centers (x64)
+      uses: actions/upload-artifact@v4
       with:
-        dotnet-version: '4.7.2'
-
-    - name: Restore NuGet Packages
-      run: nuget restore MCenters.csproj
-
-    - name: Build WPF Application (x64)
-      run: msbuild MCenters.csproj /p:Configuration=Release /p:Platform=x64 /t:Rebuild
-
-    - name: Publish Artifact (x64)
-      uses: actions/upload-artifact@v2
-      with:
-        name: wpf-app-x64
-        path: Releases/x64/executable
-
+        name: Build WPF App
+        path: Releases\x64\
   build-x86:
     runs-on: windows-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
-    - name: Setup .NET Framework SDK
-      uses: actions/setup-dotnet@v1
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v2
+
+    - name: Restore Packages
+      run: nuget restore "M Centers 8.0.sln"
+
+    - name: Build M Centers (x86)
+      run: msbuild MCenters/MCenters.csproj /p:Configuration=Release /p:Platform=x86 /t:Rebuild && echo path
+
+    - name: Publish M Centers (x86)
+      uses: actions/upload-artifact@v4
       with:
-        dotnet-version: '4.7.2'
-
-    - name: Restore NuGet Packages
-      run: nuget restore MCenters.csproj
-
-    - name: Build WPF Application (x86)
-      run: msbuild MCenters.csproj /p:Configuration=Release /p:Platform=x86 /t:Rebuild
-
-    - name: Publish Artifact (x86)
-      uses: actions/upload-artifact@v2
-      with:
-        name: wpf-app-x86
-        path: Releases/x86/executable
+        name: Build WPF App
+        path: Releases\x86\
