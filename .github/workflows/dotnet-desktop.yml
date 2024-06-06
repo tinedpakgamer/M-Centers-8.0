@@ -1,4 +1,4 @@
-name: M Centers 8.0
+`name: M Centers 8.0
 
 on:
   push:
@@ -28,8 +28,8 @@ jobs:
     - name: Publish M Centers (x64)
       uses: actions/upload-artifact@v4
       with:
-        name: Build WPF App
-        path: Releases\x64\
+        name: M-Centers-8.0 x64
+        path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\Releases\x64\
   build-x86:
     runs-on: windows-latest
 
@@ -51,5 +51,6 @@ jobs:
     - name: Publish M Centers (x86)
       uses: actions/upload-artifact@v4
       with:
-        name: Build WPF App
-        path: Releases\x86\
+        name: M-Centers-8.0 x86
+        path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\Releases\x86\
+`
