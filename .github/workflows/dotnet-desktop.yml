@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build-x64-release:
+  x64:
     runs-on: windows-latest
 
     steps:
@@ -30,7 +30,7 @@ jobs:
       with:
         name: M-Centers-8.0-Release x64
         path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\bin\x64\Release\
-  build-x86-release:
+  x86:
     runs-on: windows-latest
 
     steps:
@@ -53,49 +53,3 @@ jobs:
       with:
         name: M-Centers-8.0-Release x86
         path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\bin\x86\Release\
-  build-x64-debug:
-    runs-on: windows-latest
-
-    steps:
-    - uses: actions/checkout@v4
-
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v2
-
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v2
-
-    - name: Restore Packages
-      run: nuget restore "M Centers 8.0.sln"
-
-    - name: Build M Centers Debug (x64)
-      run: msbuild MCenters/MCenters.csproj /p:Configuration=Debug /p:Platform=x64 /t:Rebuild
-
-    - name: Publish M Centers Debug (x64)
-      uses: actions/upload-artifact@v4
-      with:
-        name: M-Centers-8.0-Debug x64
-        path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\bin\x64\Debug\
-  build-x86-debug:
-    runs-on: windows-latest
-
-    steps:
-    - uses: actions/checkout@v4
-
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v2
-
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v2
-
-    - name: Restore Packages
-      run: nuget restore "M Centers 8.0.sln"
-
-    - name: Build M Centers Debug (x86)
-      run: msbuild MCenters/MCenters.csproj /p:Configuration=Debug /p:Platform=x86 /t:Rebuild
-
-    - name: Publish M Centers Debug (x86)
-      uses: actions/upload-artifact@v4
-      with:
-        name: M-Centers-8.0-Debug x86
-        path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\bin\x86\Debug\
