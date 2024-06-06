@@ -1,4 +1,4 @@
-`name: M Centers 8.0
+name: M Centers 8.0
 
 on:
   push:
@@ -53,4 +53,3 @@ jobs:
       with:
         name: M-Centers-8.0 x86
         path: D:\a\M-Centers-8.0\M-Centers-8.0\MCenters\Releases\x86\
-`
