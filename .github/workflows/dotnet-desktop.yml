@@ -1,10 +1,7 @@
 name: M Centers 8.0 x64/x86 Builds
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  workflow_dispatch:
 
 jobs:
   x64:
