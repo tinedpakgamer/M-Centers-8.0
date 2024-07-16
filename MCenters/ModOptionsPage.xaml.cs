@@ -21,11 +21,11 @@ namespace MCenters
     /// </summary>
     public partial class ModOptionsPage : Page
     {
-        (string Title, string Description, string LearnMoreLink) DllMethodOnlineResources = ("DLL Method Online", "This method uses cracked dlls provided by M Centers and Third Parties using internet. The Third Parties are selected by you.", "https://mcenters.net/Methods/DLL-Method-Online/t");
-        (string Title, string Description, string LearnMoreLink) DllMethodAutoPatchResources = (  "DLL Method with Auto Patch",  "Same as Dll Method but creates a cracked dll using dll from your system. It does not download any cracked dll", "https://mcenters.net/Methods/DLL-Method-Auto-Patch/");
-        (string Title, string Description, string LearnMoreLink) DllMethodNonPermanentResources = ( "Dll Method Auto Patch Non Permanent",  "Same as Dll Method with Auto Patch. However its non permanent and is for users who do not want to modify their system files.", "https://mcenters.net/Methods/DLL-Method-Non-Permanent/");
-        (string Title, string Description, string LearnMoreLink) MCenters5Resources = ( "M Centers 5.0", "Use the method that was used in M Centers 5.0. Works with certain and mostly latest versions of Minecraft. Its a non permanent method.", "https://mcenters.net/Methods/M-Centers-5/");
-        (string Title, string Description, string LearnMoreLink) HookMethodResources = ( "DLL hooking Method", "A non permanent method that makes use of debugging and hooking", "https://mcenters.net/Methods/DLL-Hook-Method/");
+        (string Title, string Description, string LearnMoreLink) DllMethodOnlineResources = ("DLL Method (Online)", "This method uses cracked dlls that are provided by M Centers and third-parties (if enabled) using internet access. Third-party options can be enabled in settings and selected by you.", "https://mcenters.net/Methods/DLL-Method-Online/");
+        (string Title, string Description, string LearnMoreLink) DllMethodAutoPatchResources = (  "DLL Method (Auto-Patch)",  "This method is the same as the previous method, DLL Method (Online), but instead of going online to get a cracked DLL, it creates a DLL from your system, which doesn't need internet, so it is safer than the previous method.", "https://mcenters.net/Methods/DLL-Method-Auto-Patch/");
+        (string Title, string Description, string LearnMoreLink) DllMethodNonPermanentResources = ( "DLL Method (Auto-Patch, Non-Permanent)",  "This method is the same as DLL Method Auto-Patch except that it now doesn't modify system files and is non-permanent, since it creates a cracked version of DLLs like DLL Method Auto-Patch, but injects into the Minecraft process, instead of replacing system DLLs.", "https://mcenters.net/Methods/DLL-Method-Non-Permanent/");
+        (string Title, string Description, string LearnMoreLink) MCenters5Resources = ( "Memory Injection", "This method uses the method that was used previously in M Centers 5.0, this method only works on newer minecraft versions starting from 1.19.20 and later, while being non-permanent, being one of the safest methods that exist. ", "https://mcenters.net/Methods/M-Centers-5/");
+        (string Title, string Description, string LearnMoreLink) HookMethodResources = ( "DLL Hooking Method", "This method is non-permanent and makes use of debugging and hooking into the Minecraft process to unlock the game without modifying any system files.", "https://mcenters.net/Methods/DLL-Hook-Method/");
         SolidColorBrush DefaultBackground;
         SolidColorBrush ActiveBackground;
         HoverableButton ActiveButton;
@@ -96,11 +96,11 @@ namespace MCenters
                 case ModOptions.DllMethodAutoPatch:
                     return ("Install Cracked DLL", "Uninstall Cracked DLL");
                 case ModOptions.DllMethodAutoPatchNonPermanent:
-                    return ("Launch Minecraft", "Not Applicable");
+                    return ("Launch Minecraft", "N/A");
                 case ModOptions.MCenters5:
                     return ("Launch Minecraft: Full", "Launch Minecraft: Trial");
                 case ModOptions.HookMethod:
-                    return ("Launch Minecraft", "Not Applicable");
+                    return ("Launch Minecraft", "N/A");
 
             }
             return null;
