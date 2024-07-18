@@ -3,7 +3,7 @@
   <img src='https://github.com/tinedpakgamer/M-Centers-8.0/blob/master/MCenters/images/mcenter_5_icon.png?raw=true' alt='M Centers Icon' width="30%">
 </p>
 
-<p align='center'>A multi-method &amp; WIP (Work In Progress) unlocker for <em><a href="ms-windows-store://pdp/?ProductId=9NBLGGH2JHXJ">Minecraft for Windows</a>, and any other programs that use the same licensing system as <a href="ms-windows-store://pdp/?ProductId=9NBLGGH2JHXJ">Minecraft for Windows</a>.</em>
+<p align='center'>A multi-method &amp; WIP (Work In Progress) unlocker for <em>Minecraft for Windows</em>, and any other programs that use the same licensing system as <em>Minecraft for Windows</em>.
 </p>
 
 ## Usage
@@ -15,11 +15,11 @@
   - [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe), to be able to open and use the app.
 
 ### Optional Requirements
-  - <a href="ms-windows-store://pdp/?ProductId=9NBLGGH2JHXJ">Minecraft</a>, the program to crack, this program is required by some of the mod options.
+  - Minecraft for Windows, or the program to crack, the program that you need to crack is required by some of the mod options.
 
 <h3>How to install M Centers and install the hack</h3>
 <ol>
-    <li>Download <a href="ms-windows-store://pdp/?ProductId=9NBLGGH2JHXJ">Minecraft: Bedrock Edition</a></li>
+    <li>Download Minecraft: Bedrock Edition free trial by using the Microsoft Store or Xbox, an alternative way and simpler way is just to open Windows Run (Windows key + R) and type <strong>ms-windows-store://pdp/?ProductId=9NBLGGH2JHXJ</strong> to launch the Minecraft for Windows store page and let you download the free trial (never expires).</li>
     <li>Download the <strong>latest</strong> version from <a href="https://mcenters.net/Downloads/M-Centers-8th-Edition/">the M Centers website</a></li>
     <li>Extract the files</li>
     <li>Open <strong>M Centers.exe</strong></li>
