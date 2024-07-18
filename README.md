@@ -19,7 +19,7 @@
 
 <h3>How to install M Centers and install the hack</h3>
 <ol>
-    <li>Download Minecraft: Bedrock Edition free trial by using the Microsoft Store or Xbox, an alternative way and simpler way is just to open Windows Run (Windows key + R) and type <strong>ms-windows-store://pdp/?ProductId=9NBLGGH2JHXJ</strong> to launch the Minecraft for Windows store page and let you download the free trial (never expires).</li>
+    <li>Download Minecraft: Bedrock Edition free trial by using the Microsoft Store or the <a href="https://www.xbox.com/games/store/minecraft-for-windows/9NBLGGH2JHXJ">Xbox</a> app, another way is to open Windows Run (Windows key + R) and type <strong>ms-windows-store://pdp/?ProductId=9NBLGGH2JHXJ</strong> to launch the Minecraft for Windows store page to let you download the free trial of Minecraft for Windows to unlock it.</li>
     <li>Download the <strong>latest</strong> version from <a href="https://mcenters.net/Downloads/M-Centers-8th-Edition/">the M Centers website</a></li>
     <li>Extract the files</li>
     <li>Open <strong>M Centers.exe</strong></li>
