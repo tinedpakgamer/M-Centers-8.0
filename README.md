@@ -1,39 +1,44 @@
-<h1 align='center'>M Centers</h1>
+<h1 align='center'>M Centers 8.0</h1>
 <p align='center'>
   <img src='https://github.com/tinedpakgamer/M-Centers-8.0/blob/master/MCenters/images/mcenter_5_icon.png?raw=true' alt='M Centers Icon' width="30%">
 </p>
 
-<p align='center'>A multi-method &amp; WIP unlocker for <em><a href="ms-windows-store://pdp/?ProductId=9NBLGGH2JHXJ">Minecraft for Windows</a></em>
+<p align='center'>A multi-method &amp; WIP (Work In Progress) unlocker for <em><a href="ms-windows-store://pdp/?ProductId=9NBLGGH2JHXJ">Minecraft for Windows</a>, and any other programs that use the same licensing system as <a href="ms-windows-store://pdp/?ProductId=9NBLGGH2JHXJ">Minecraft for Windows</a>.</em>
 </p>
 
 ## Usage
 
 ### Requirements
 
-  - Windows 10 or above
-  - An x64 or x86 CPU
-### Optional Requirements
-  - [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) to use certain Mod Options
-  - Minecraft, sometimes it should be already installed for certain Mod Options to work
+  - Windows 10 or above.
+  - An x64 or x86 CPU.
+  - [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe), to be able to open and use the app.
 
-<h3>Install process</h3>
+### Optional Requirements
+  - <a href="ms-windows-store://pdp/?ProductId=9NBLGGH2JHXJ">Minecraft</a>, the program to crack, this program is required by some of the mod options.
+
+<h3>How to install M Centers and install the hack</h3>
 <ol>
-    <li>Download <a href="ms-windows-store://pdp/?ProductId=9NBLGGH2JHXJ">Minecraft: Bedrock Edition Trial</a></li>
-    <li>Download the <strong>latest</strong> version from <a href="https://mcenters.net/Downloads/M-Centers-8th-Edition/">M Centers Website</a></li>
+    <li>Download <a href="ms-windows-store://pdp/?ProductId=9NBLGGH2JHXJ">Minecraft: Bedrock Edition</a></li>
+    <li>Download the <strong>latest</strong> version from <a href="https://mcenters.net/Downloads/M-Centers-8th-Edition/">the M Centers website</a></li>
     <li>Extract the files</li>
     <li>Open <strong>M Centers.exe</strong></li>
-    <li>Click <code>Click install cracked DLL</code></li>
+    <li>Select the 3rd option, by default it will say <strong>Dll Method Online</strong></li>
+    <li>Select <strong>Dll Method Auto Patch (or any other mod option you want to use)</strong></li>
+    <li>Press on the <strong>Activate</strong> button.</li>
+    <li>Press on the<strong>Back</strong> button, to go to the main menu.</li>
+    <li>Click <code>"Install Cracked DLL"</code></li>
     <li>Click <code>Start</code></li>
 </ol>
 
-## How to compile M Centres
-- Clone or download repository to your device
-- [Download](https://visualstudio.microsoft.com/) Visual Studio 2022
-- Download and install .Net Desktop Development Workload in Visual Studio 2022
-- Open 'M Centers 8.0.sln' file with Visual Studio
-- Click build
+## How to compile M Centers from the source code
+- Clone or download the repository to your device.
+- [Download](https://visualstudio.microsoft.com/) Visual Studio 2022.
+- Download and install .NET Desktop Development Workload in Visual Studio 2022.
+- Open the 'M Centers 8.0.sln' file with Visual Studio.
+- Click on Build.
 
-### Folder structure of the compiled program 
+### The folder structure of M Centers when compiled:
 ```
 my-folder/                         # Root directory.
 |- FluentWPF.dll                   # DLL file for FluentWPF library
@@ -46,14 +51,15 @@ my-folder/                         # Root directory.
 |- MCentersLibrary.dll             # DLL file for MCentersLibrary
 |- MCentersLibrary.pdb             # PDB file for MCentersLibrary
 ```
+
 ## Contributors
 
- <a href = "https://github.com/tinedpakgamer/M-Centers-8.0/graphs/contributors">
-   <img src = "https://contrib.rocks/image?repo=tinedpakgamer/M-Centers-8.0"/>
+ <a href="https://github.com/tinedpakgamer/M-Centers-8.0/graphs/contributors">
+   <img src="https://contrib.rocks/image?repo=tinedpakgamer/M-Centers-8.0"/>
  </a>
 
 ## License
 
-Read LICENSE.MD
+Read [LICENSE](LICENSE.MD) for the M Centers license.
 
-For 3rd party licences check LICENSE.THIRDPARTY
+For any other licenses (such as 3rd party licenses), read [LICENSE.THIRDPARTY](LICENSE.THIRDPARTY).
