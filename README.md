@@ -12,9 +12,9 @@
 
   - Windows 10 or above.
   - An x64 or x86 CPU.
-  - [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe), to be able to open and use the app.
 
 ### Optional Requirements
+  - [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe), to be able to use some mod options in the app.
   - Minecraft for Windows, or the program to crack, the program that you need to crack is required by some of the mod options.
 
 <h3>How to install M Centers and install the hack</h3>
