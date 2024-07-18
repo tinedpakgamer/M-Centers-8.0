@@ -1,10 +1,15 @@
-<h1 align='center'>M Centers 8th Edition</h1>
 <p align='center'>
   <img src='https://github.com/tinedpakgamer/M-Centers-8.0/blob/master/MCenters/images/mcenter_5_icon.png?raw=true' alt='M Centers Icon' width="30%">
 </p>
-
+<h1 align='center'>M Centers 8th Edition</h1>
 <p align='center'>A multi-method &amp; WIP (Stable, Safe & Working) unlocker for <em>Minecraft for Windows</em>, and any other programs that use the same licensing system as <em>Minecraft for Windows</em>.
 </p>
+
+[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/tinedpakgamer/M-Centers-8.0?include_prereleases)](https://img.shields.io/github/v/release/tinedpakgamer/M-Centers-8.0?include_prereleases)
+[![GitHub last commit](https://img.shields.io/github/last-commit/tinedpakgamer/M-Centers-8.0)](https://img.shields.io/github/last-commit/tinedpakgamer/M-Centers-8.0)
+[![GitHub issues](https://img.shields.io/github/issues-raw/tinedpakgamer/M-Centers-8.0)](https://img.shields.io/github/issues-raw/tinedpakgamer/M-Centers-8.0)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/tinedpakgamer/M-Centers-8.0)](https://img.shields.io/github/issues-pr/tinedpakgamer/M-Centers-8.0)
+[![GitHub contributors number](https://img.shields.io/github/contributors/tinedpakgamer/M-Centers-8.0)](https://img.shields.io/github/contributors/tinedpakgamer/M-Centers-8.0)
 
 ## Usage
 
@@ -54,9 +59,9 @@ my-folder/                         # Root directory.
 
 ## Contributors
 
- <a href="https://github.com/tinedpakgamer/M-Centers-8.0/graphs/contributors">
-   <img src="https://contrib.rocks/image?repo=tinedpakgamer/M-Centers-8.0"/>
- </a>
+<a href="https://github.com/tinedpakgamer/M-Centers-8.0/graphs/contributors">
+  <img src="https://contrib.rocks/image?i=1&repo=tinedpakgamer/M-Centers-8.0"/>
+</a>
 
 ## License
 
