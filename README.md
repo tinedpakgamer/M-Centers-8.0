@@ -3,7 +3,7 @@
   <img src='https://github.com/tinedpakgamer/M-Centers-8.0/blob/master/MCenters/images/mcenter_5_icon.png?raw=true' alt='M Centers Icon' width="30%">
 </p>
 
-<p align='center'>A multi-method &amp; WIP (Stable & Working) unlocker for <em>Minecraft for Windows</em>, and any other programs that use the same licensing system as <em>Minecraft for Windows</em>.
+<p align='center'>A multi-method &amp; WIP (Stable, Safe & Working) unlocker for <em>Minecraft for Windows</em>, and any other programs that use the same licensing system as <em>Minecraft for Windows</em>.
 </p>
 
 ## Usage
