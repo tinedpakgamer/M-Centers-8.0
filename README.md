@@ -39,10 +39,10 @@
     <li>Download the <strong>latest</strong> version from <a href="https://mcenters.net/Downloads/M-Centers-8th-Edition/">the M Centers website</a></li>
     <li>Extract the files</li>
     <li>Open <strong>M Centers.exe</strong></li>
-    <li>Select the 3rd option, by default it will say <strong>Dll Method Online</strong></li>
-    <li>Select <strong>Dll Method Auto Patch (or any other mod option you want to use)</strong></li>
+    <li>Select the 3rd option, by default it will say <strong>DLL Method Online</strong></li>
+    <li>Select <strong>DLL Method Auto Patch (or any other mod option you want to use)</strong></li>
     <li>Press on the <strong>Activate</strong> button.</li>
-    <li>Press on the<strong>Back</strong> button, to go to the main menu.</li>
+    <li>Press on the <strong>Back</strong> button, to go to the main menu.</li>
     <li>Click <code>"Install Cracked DLL"</code></li>
     <li>Click <code>Start</code></li>
 </ol>
