@@ -1,5 +1,5 @@
 <p align='center'>
-  <img src='https://github.com/tinedpakgamer/M-Centers-8.0/blob/master/MCenters/images/mcenter_5_icon.png?raw=true' alt='M Centers Icon' width="30%">
+  <img src='https://github.com/tinedpakgamer/M-Centers-8.0/blob/master/MCenters/images/mcenter_5_icon.png?raw=true' alt='M Centers Logo' width="30%">
 </p>
 <h1 align='center'>M Centers 8th Edition</h1>
 <p align='center'>A multi-method &amp; WIP (Stable, Safe & Working) unlocker for <em>Minecraft for Windows</em>, and any other programs that use the same licensing system as <em>Minecraft for Windows</em>.
@@ -47,25 +47,42 @@
     <li>Click <code>Start</code></li>
   </ol>
   
-## Faqs
+## FAQ
 <ol>
-  <li>
-  Avoid using mode <strong>Dll auto patch</strong> with Windows Event Viewer running, that will cause file <strong>Windows.ApplicationModel.Store.dll</strong> cannot be read.
-  </li>
-  <li>  For Chinese users, check if you can visit raw.githubusercontent.com directly if you meet flashback or error like cannot find file <strong>Records.txt</strong>. If so, you can try make a hosts record manually:
-  <code>
-  185.199.108.133               raw.githubusercontent.com
-  </code>
-</li>
+<li><p>Why does it give me Unsupported Version?</p>
 
+The unsupported version error occurs when you are using the DLL Online method, and the DLL for your version of Windows is not found on the repository you are using (either custom or either the official M Centers DLL repo), to fix this you need to use the DLL Auto Patch method, which will take your system DLLs rather than online ones and patch them.
+</li>
+<li><p>Are permanent DLL methods dangerous?</p>
+
+To answer this question, DLL methods are not dangerous at all, as long as you use official, patched DLLs, such as the M Centers DLL repo or you can use the DLL Auto Patch method, and not 3rd party DLLs from 3rd party repos, if they do cause damage, then you can always Uninstall the DLL method with Uninstall Hack, and switch to a non-permanent method such as the M Centers 5 method, the DLL (Non-Permanent) method, or the Hook method.
+</li>
+<li><p>Why does it give Access to the path 'C:\Windows\System32\Windows.ApplicationModel.Store.dll' is denied or something similar?</p>
+
+This is either because you didn't run M Centers as administrator, or your antivirus is falsely flagging M Centers and not allowing it to be accessed. You can fix it by running M Centers as administrator, disabling your antivirus. If this still didn't fix your problem, press the Uninstall Hack button in M Centers, then restart your computer, and try Install Hack again.
+</li>
+<li><p>Why does it give me System.IO.FileNotFoundException?</p>
+
+System.IO.FileNotFoundException occurs when the system cannot find files, this might be happening because you didn't extract the .zip file and are running M Centers standalone without any of its files from the .zip file, to fix it, you need to extract the .zip file
+</li>
+<li><p>Why doesn't the DLL Auto Patch method work while running Windows Event Viewer?</p>
+
+Please close Windows Event Viewer while running M Centers using the mode, <strong>DLL Auto Patch</strong>, it will cause the system licensing dll <strong>Windows.ApplicationModel.Store.dll</strong> to become non-readable.
+</li>
+<li><p>Why does it give me an error like finding Records.txt or similar in China?</p>
+
+If you live in China, check if you can visit raw.githubusercontent.com directly, but if you meet a flashback or get an error like cannot find file <strong>Records.txt</strong>, then try and  make a hosts record manually, like so:
+<code>185.199.108.133               raw.githubusercontent.com</code>
+</li>
 </ol>
 
 ## How to compile M Centers from the source code
-- Clone or download the repository to your device.
-- [Download](https://visualstudio.microsoft.com/) Visual Studio 2022.
-- Download and install .NET Desktop Development Workload in Visual Studio 2022.
-- Open the 'M Centers 8.0.sln' file with Visual Studio.
-- Click on Build.
+- Clone the repository or download the repository to your device.
+- [Download](https://visualstudio.microsoft.com/) and install Visual Studio 2022.
+- Download and install .NET Desktop Development and Desktop development with C++ Workload in Visual Studio 2022.
+- Open the 'M Centers 8.0.sln' file with Visual Studio 2022.
+- Click on Build, and wait until it compiles M Centers.
+- Go to the build folder of your project, and tada, you have compiled M Centers from the source code. 
 
 ### The folder structure of M Centers when compiled:
 ```
@@ -84,11 +101,11 @@ my-folder/                         # Root directory.
 ## Contributors
 
 <a href="https://github.com/tinedpakgamer/M-Centers-8.0/graphs/contributors">
-  <img src="https://contrib.rocks/image?i=1&repo=tinedpakgamer/M-Centers-8.0"/>
+  <img src="https://contrib.rocks/image?i=2&repo=tinedpakgamer/M-Centers-8.0"/>
 </a>
 
 ## License
 
-Read [LICENSE](LICENSE.MD) for the M Centers license.
+Read [LICENSE](LICENSE.MD) for the license of M Centers 8th Edition.
 
 For any other licenses (such as 3rd party licenses), read [LICENSE.THIRDPARTY](LICENSE.THIRDPARTY).
